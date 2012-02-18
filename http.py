@@ -18,6 +18,10 @@ def handle_request(request):
     # posts = db.posts
     # print posts.insert(post)
     
+    from Index from modules.web
+    
+    Index.Index.get()
+    
     message = "You requested %s\n" % request.uri
     request.write("HTTP/1.1 200 OK\r\nContent-Length: %d\r\n\r\n%s" % (len(message), message))
     request.finish()
